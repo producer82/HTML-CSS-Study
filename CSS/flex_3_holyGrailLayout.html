@@ -1,0 +1,63 @@
+<!doctype>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+		.container{
+			display:flex;
+			flex-direction:column;
+		}
+		header{
+			border-bottom:1px solid gray;
+			text-align:center;
+		}
+		footer{
+			border-top:1px solid gray;
+			text-align:center;
+		}
+		.content{
+			display:flex;
+		}
+		.content > nav{
+			border-right:1px solid gray;
+		}
+		.content > aside{
+			border-left:1px solid gray;	
+		}
+		nav, aside{
+			flex-basis:200px;
+			flex-grow:1;
+			flex-shrink: 0;
+		}
+		main{
+			text-align:center;
+			flex-grow:4
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>홈페이지 로고</h1>
+		</header>
+		<section class="content">
+			<nav>
+				<ul>
+					<li>html</li>
+					<li>css</li>
+					<li>javascript</li>
+				</ul>
+			</nav>
+			<main>
+				HTML, CSS, JavaScript는 웹을 위한 기술입니다.
+			</main>
+			<aside>
+				AD
+			</aside>
+		</section>
+		<footer>
+			<a href="http://google.co.kr">홈페이지</a>
+		</footer>
+	</div>
+</body>
+</html>
